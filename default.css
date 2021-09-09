@@ -1,0 +1,599 @@
+
+html, body
+{
+	height: 100%;
+}
+
+body
+{
+	margin: 0px;
+	padding: 0px;
+	background: #171717;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 12pt;
+	font-weight: 300;
+	color: #363636;
+}
+
+h1, h2, h3
+{
+	margin: 0;
+	padding: 0;
+}
+
+p, ol, ul
+{
+	margin-top: 0px;
+}
+
+p
+{
+	line-height: 180%;
+}
+
+strong
+{
+}
+
+a
+{
+	color: #358ca8;
+}
+
+a:hover
+{
+	text-decoration: none;
+}
+
+a img
+{
+	border: none;
+}
+
+	.image
+	{
+		display: inline-block;
+	}
+
+	.image img
+	{
+		display: block;
+		width: 100%;
+		opacity: 0.75;
+		box-shadow: 0px 0px 10px -2px gray
+	}
+
+	.image img:hover
+	{
+		transition: all .3s ease-in-out;
+		opacity: 1;
+	}
+
+	.precio{
+		text-align: center;
+		font-family: arial;
+		color: #4CC9F0;
+		width: auto;
+		margin-bottom: 12px;
+		text-shadow: black 1px 3px 3px;
+	}
+
+	.caracteristicas
+	{
+		font-size: 18px;
+		width: 100%;
+	}
+
+	.image-full
+	{
+		display: block;
+		width: 100%;
+		margin: 0 0 1em 0;
+	}
+
+	.image-left
+	{
+		float: left;
+		margin: 0 2em 2em 0;
+	}
+
+	.image-centered
+	{
+		display: block;
+		margin: 0 0 2em 0;
+	}
+
+		.image-centered img
+		{
+			margin: 0 auto;
+			width: auto;
+		}
+
+
+hr
+{
+	display: none;
+}
+
+/** WRAPPER */
+
+#wrapper {
+	background: #FFFFFF url('./images/bg_ondas.png') repeat;
+}
+
+.container
+{
+	width: 1200px;
+	margin: 0px auto;
+}
+
+.clearfix
+{
+	clear: both;
+}
+
+/*********************************************************************************/
+/* Header                                                                        */
+/*********************************************************************************/
+
+#header
+{
+	position: relative;
+	height: 125px;
+}
+
+/*********************************************************************************/
+/* Logo                                                                          */
+/*********************************************************************************/
+
+	#logo
+	{
+		position: relative;
+		top: 1.7em;
+		left: 0;
+		width: auto;
+	}
+
+	#logo h1
+	{
+		display: inline;
+		font-family: 'Brush Script MT';
+		font-size: 70px;
+		font-weight: 300;
+		color: #4CC9F0;
+		text-shadow: black 4px 6px 3px;
+	}
+
+	#logo a img
+	{
+		filter: drop-shadow(4px 6px 1.5px black);
+	}
+
+	#logo a
+	{
+		text-decoration: none;
+		color: #FFF;
+		transition: all .25s ease-in-out;
+	}
+
+	#logo a:hover
+	{
+		transition: all .25s ease-in-out;
+		font-size: 30px;
+	}
+
+/*********************************************************************************/
+/* Menu                                                                          */
+/*********************************************************************************/
+
+	#menu
+	{
+		position: absolute;
+		right: 0;
+		top: 3em;
+	}
+
+	#menu ul
+	{
+		display: inline-block;
+	}
+
+	#menu li
+	{
+		display: block;
+		float: left;
+		text-align: center;
+	}
+
+	#menu li a, #menu li span
+	{
+		display: block;
+		font-weight: 600;
+		padding: 0.80em 1.5em;
+		letter-spacing: 0.20em;
+		text-decoration: none;
+		font-size: 17.2px;
+		color: #4CC9F0;
+		transition: all .37s ease-in-out;
+	}
+
+	#menu li:hover a, #menu li.active a, #menu li.active span
+	{
+		transition: all .37s ease-in-out;
+		font-size: 18px;
+	}
+
+	#menu .current_page_item a
+	{
+		color: #FFF;
+	}
+
+/*********************************************************************************/
+/* Page                                                                          */
+/*********************************************************************************/
+
+	#page
+	{
+		position: relative;
+		overflow: hidden;
+		padding: 5em 0em 5em 0em;
+	}
+
+/*********************************************************************************/
+/* Content                                                                       */
+/*********************************************************************************/
+
+	#content
+	{
+		float: left;
+		width: 790px;
+	}
+
+	#content p
+	{
+		font-size: 18px;
+	}
+
+/*********************************************************************************/
+/* Sidebar                                                                       */
+/*********************************************************************************/
+
+	#sidebar
+	{
+		float: right;
+		width: 345px;
+	}
+
+	#sidebar .title h2
+	{
+		font-size: 1.6em;
+	}
+
+	#sidebar .box1
+	{
+		margin-bottom: 3em;
+	}
+
+/*********************************************************************************/
+/* Footer                                                                        */
+/*********************************************************************************/
+
+	#footer
+	{
+	}
+
+/*********************************************************************************/
+/* Wrappers                                                                      */
+/*********************************************************************************/
+
+#header-wrapper
+{
+	overflow: hidden;
+	height: 100%;
+	background: rgb(147, 195, 215) url('images/fondo_principal.jpg') no-repeat top center;
+	background-size: 100%;
+}
+
+#header-wrapper:before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url('images/bg01.png');
+	opacity: .4;
+}
+
+#header-wrapper2
+{
+	background: rgba(0,0,0,.6);
+	box-shadow: inset 0 -10px 10px -10px rgba(0,0,0,.3);
+}
+
+
+
+	ul.style2
+	{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	ul.style2 li
+	{
+		border-top: solid 1px #E5E5E5;
+		padding: 0.7em 0;
+	}
+
+	ul.style2 li:first-child
+	{
+		border-top: 0;
+		padding-top: 0;
+	}
+
+/*********************************************************************************/
+/* Portfolio                                                                     */
+/*********************************************************************************/
+
+	#portfolio-wrapper
+	{
+		background: #221f1f url('./images/bush.png') repeat scroll;
+		padding: 2em 0em;
+	}
+
+	#portfolio
+	{
+		overflow: hidden;
+		text-align: center;
+		color: #FFF;
+	}
+
+	#portfolio .title
+	{
+		width: 50%;
+		background: rgba(4,40,51,.45);
+		border-radius: 10px;
+		box-shadow: 0px 0px 8px 2px gray;
+		margin: 2em auto 2em;
+	}
+
+	#portfolio .title h2
+	{
+		color: #FFF;
+	}
+
+	#portfolio .byline
+	{
+		color: #071e36;
+	}
+
+	#column1,
+	#column2,
+	#column3,
+	#column4
+	{
+		width: 282px;
+		padding-bottom: 8px;
+	}
+
+	#column1 h3,
+	#column2 h3,
+	#column3 h3,
+	#column4 h3
+	{
+		letter-spacing: -0.9px;
+		color: #071e36;
+		font-size: 22px;
+		text-shadow: white 2px 3px 3px;
+	}
+
+	#column1 img,
+	#column2 img,
+	#column3 img,
+	#column4 img
+	{
+		width: 282px;
+	}
+
+	#column1 p,
+	#column2 p,
+	#column3 p,
+	#column4 p
+	{
+		background: rgba(4,40,51,.45);
+		border-radius: 0px;
+		box-shadow: 0px 0px 0px px gray;
+	}
+
+	#column1,
+	#column2
+	{
+		float: left;
+		margin-right: 24px;
+	}
+
+	#column3
+	{
+		float: left;
+	}
+
+	#column4
+	{
+		float: right;
+	}
+
+/*********************************************************************************/
+/* Copyright                                                                     */
+/*********************************************************************************/
+
+	#copyright
+	{
+		overflow: hidden;
+		padding: 1.8em 0em;
+	}
+
+	#copyright p
+	{
+		letter-spacing: 0.1em;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 0.9em;
+		color: #6F6F6F;
+	}
+
+	#copyright a
+	{
+		text-decoration: none;
+		color: #9c9c9c;
+	}
+
+	#copyright a:hover
+	{
+		text-decoration: none;
+		color: #c2c0c0;
+	}
+
+
+/*********************************************************************************/
+/* Heading Titles                                                                */
+/*********************************************************************************/
+
+	.title
+	{
+		margin-bottom: 3em;
+		text-transform: uppercase;
+	}
+
+	.title h2
+	{
+		letter-spacing: 2px;
+		font-weight: 700;
+		font-size: 2.3em;
+		color: #171717;
+	}
+
+	#two-column .title h2
+	{
+		letter-spacing: 0px;
+	}
+
+
+	.title .byline
+	{
+		letter-spacing: 2.3px;
+		text-transform: uppercase;
+		font-weight: 650;
+		font-size: 0.90em;
+		color: #6F6F6F;
+	}
+
+/*********************************************************************************/
+/* Button Style                                                                  */
+/*********************************************************************************/
+
+	.button
+	{
+		display: inline-block;
+		margin-top: 0em;
+		padding: 1em 3em;
+		background: #2288a8;
+		-moz-transition: opacity 0.25s ease-in-out;
+		-webkit-transition: opacity 0.25s ease-in-out;
+		-o-transition: opacity 0.25s ease-in-out;
+		-ms-transition: opacity 0.25s ease-in-out;
+		transition: opacity 0.25s ease-in-out;
+		letter-spacing: 0.20em;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-weight: 600;
+		font-size: 0.90em;
+		color: #FFF;
+		box-shadow: 0px 0px 10px 0.5px gray
+	}
+
+		.button:hover
+		{
+			background: #3ba4c4;
+		}
+
+		.button:active
+		{
+			background: #147391;
+		}
+
+
+/*********************************************************************************/
+/* Two Column                                                                    */
+/*********************************************************************************/
+
+	#two-column
+	{
+		padding-top: 1.5em;
+	}
+
+	#two-column .title h2
+	{
+		font-size: 1.6em;
+		text-align: center;
+		height: 30px;
+	}
+
+	#two-column #tbox1
+	{
+		float: left;
+		width: 370px;
+		margin-left: 10px;
+	}
+
+	#two-column #tbox2
+	{
+		float: right;
+		width: 370px;
+	}
+
+	#tbox3, #tbox4
+	{
+		margin-top: 2em;
+	}
+
+	#two-column #tbox3
+	{
+		float: left;
+		width: 370px;
+		margin-left: 10px;
+	}
+
+	#two-column #tbox4
+	{
+		float: right;
+		width: 370px;
+	}
+
+	/*********************************************************************************/
+	/* Iconos flotantes fijos                                                                    */
+	/*********************************************************************************/
+
+	#container-icons
+	{
+		width: 200px;
+		display: flex;
+		justify-content: space-around;
+		position: fixed;
+	  top: 88%;
+	  left: 1%;
+	}
+
+	.boton
+	{
+		width: 50px;
+		filter: drop-shadow(2px 4px 3px gray);
+	}
+
+	#container-icons img:hover
+	{
+		transition:all .25s ease-in-out;
+		-webkit-transform:scale(1.2);
+		transform:scale(1.2);
+	}
